@@ -101,3 +101,29 @@ buat file detect ping sebelum serangan dan sesudah serangan
 
 13. Lakukan koneksi SSH antara Varda dan Eru
 <img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/61c03e9a-77c9-4f0f-81cc-595d46f7ba86" />
+
+
+
+
+
+# Soal nomor 14
+
+**Kategori:** disuru nganalisa doang kan ya??
+**Platform:** wireshark, kali linux (pake wsl saya)
+
+---
+
+## Ringkasan Permasalahan
+
+jadi kita kan disuru nganalisa doang...
+sebenernya menurut saya (yang bener" ga paham dan sedang pasrah sementara untuk modul 1... meninggal wakkk) keknya tinggal filter http/tcp yang "POST" di wireshark terus juga ngeidentifikasi IP mana yg spam req dan siapa targetrnya...
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)
+
+* **Hasil Analisa:** menurut saya tidak ada req login atau upaya bruteforce yang berhasil deh.. soalnya invalid credential dan ada satu yg dapet respon tapi cuman 200 OK.... wkwkwkw cuek
+
+## lampiran lain saya coba pake bashscript ke tshark (tshark itu wireshark ya kan ya plsss boleh.. saya menangis ini)
+## script bashnya ada di repo yoi
+
+[![lihat tree isi file output dari script saya](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/ekstraktraffic.png?raw=true)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/ekstraktraffic.png?raw=true)
+
+[![dia nampilin gagal doang ya mas ya..](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/gagallogin.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/gagallogin.png)
