@@ -1,0 +1,15 @@
+# Soal nomor 14
+
+**Kategori:** disuru nganalisa doang kan ya??
+**Platform:** wireshark, kali linux (pake wsl saya)
+
+---
+
+## Ringkasan Permasalahan
+
+jadi kita kan disuru nganalisa doang...
+sebenernya menurut saya (yang bener" ga paham dan sedang pasrah sementara untuk modul 1... meninggal wakkk) keknya tinggal filter http/tcp yang "POST" di wireshark terus juga ngeidentifikasi IP mana yg spam req dan siapa targetrnya...
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)
+
+* **Hasil Analisa:** menurut saya tidak ada req login atau upaya bruteforce yang berhasil deh.. soalnya invalid credential dan ada satu yg dapet respon tapi cuman 200 OK.... wkwkwkw cuek
+
