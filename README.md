@@ -127,3 +127,33 @@ sebenernya menurut saya (yang bener" ga paham dan sedang pasrah sementara untuk 
 [![lihat tree isi file output dari script saya](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/ekstraktraffic.png?raw=true)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/ekstraktraffic.png?raw=true)
 
 [![dia nampilin gagal doang ya mas ya..](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/gagallogin.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/gagallogin.png)
+
+# Soal nomor 15
+
+**Kategori:** disuru nambil hasil record input usb / keystroke terus baru suruh cari plaintext string alam artian berarti kita harus ngedoecode, convert, dll
+**Platform:** wireshark, kali linux (pake wsl saya)
+
+---
+
+## Ringkasan Permasalahan
+
+### jadi kita kan dikasi keystroke capture
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/wiresharkcapturestroke.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/wiresharkcapturestroke.png)
+
+
+### kita extrack aja di linux
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/cekkeystrokementah.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/cekkeystrokementah.png)
+
+### baru di decode
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/analisis1.png)
+
+### cek hasil decode an
+[![filtering wireshark dan lihat satu" di http/tcp stream ](https://github.com/pusingdengandunia/Jarkom-Modul-1-2025-K-61/blob/main/soal14/decodemumet.png)
+
+* **Hasil Analisa:** Jika soal minta “identifikasi pesan/ketikan yang dicuri” maka sepertinya ini : UGxXByMHYxZGVfeTBclczNybjRtZVbmRfcDRzccwcmQ.
+Jika soal minta “apa password rahasianya?”.... belum bisa dipastikan plaintext dari data yang didecode; kemungkinan :
+password adalah blob biner tersebut (dipakai sebagai token), OR
+perlu dekripsi tambahan (XOR/keystream/symmetric) untuk mendapatkan plaintex
+
+
+
