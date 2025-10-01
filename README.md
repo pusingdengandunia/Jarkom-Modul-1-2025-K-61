@@ -9,8 +9,7 @@
 <img width="711" height="598" alt="Image" src="https://github.com/user-attachments/assets/b72435d0-f418-43e1-bf76-172577e33378" />
 
 5. Menginput semua script ke /root/.bashrc.
-
-> Node Eru
+- Node Eru
 '''
 apt update
 apt install -y iptables
